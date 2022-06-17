@@ -1,0 +1,92 @@
+p{
+    margin-top:-15px;
+    font-size:smaller;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ruda', sans-serif;   
+}
+#bottom{
+    margin-top: 10px;
+}
+#shopByBrands{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+}
+.shopbrands{
+    font-weight: lighter;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ruda', sans-serif;
+}
+hr{
+    border: px solid rgb(197, 189, 189);
+}
+#ourEvents{
+    display: flex;
+    height: 300px;
+    justify-content: space-around;
+    padding-left: 100px;
+    cursor:pointer;
+}
+.event{
+    height: 100%;
+    width: 75%;
+    border-radius: 10px;
+}
+#whatsTrending,#discount,#invites,#recipes{
+    height: 400px;
+    width:95% ;
+    margin: auto;
+    margin-bottom: 20px ;
+    display: flex;
+    margin-top: 20px;
+}
+#trend,#dis{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 20px;
+    
+}
+#slideShow{
+    height: 400px;
+    display: flex;
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.slide_img{
+    width: fit-content;
+    height: 100%;
+}
+#invites{
+    height: 250px;
+    padding-left: 15px;
+    justify-content: space-between;
+}
+.opt {
+    height: 100%;
+    border-radius: 20px;
+}
+.opt img{
+    width: 95%;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#recipes img{
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
