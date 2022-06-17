@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    #geeta{
+        height: 100px;
+        min-width: 766px;
+        background-color: rgba(211, 206, 206, 0.568);
+        justify-content: space-between;
+        display: flex;
+        
+        
+    }
+    #geeta1{
+        width: 10%;
+        height:100px;
+        
+        padding-top: 10px;
+        
+    }
+    #form{
+    justify-content: space-between;
+    display: flex;
+    padding-top: 30px;
+    margin-left: 350px;
+    
+   }
+   
+    
+   .icon {
+  padding: 7px;
+  background: rgb(245, 11, 214);
+  color: white;
+  min-width: 30px;
+  text-align: center;
+  height: 15px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+#hide1{
+    display: none;
+} 
+</style>
+<body>
+    <div id="geeta">
+       
+         <form id="form">
+
+            <i class="fa fa-mobile-phone icon"></i>
+            <input type="text " placeholder="Enter Mobile No." style="width: 100px;margin:10px;border: none; border-radius: 5px; text-align: center; height:20px; padding:5px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; " class="makadi" id="mobile" value="">
+            
+            <i class="fa fa-envelope icon"></i>
+            <input type="email " placeholder="Enter email" style="width: 100px; height:20px; padding:5px;margin:10px;border: none; border-radius: 5px; text-align: center; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; ;"  id="email" value="">
+            
+            <input type="password" placeholder="Enter OTP" style="width: 100px; margin:10px;border: none; border-radius: 5px; text-align: center;height:20px; padding:5px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; " class="makadi" onclick="getotp()" id="otp" value="">
+            
+            <i class="fa fa-key icon"></i>
+            <input type="password" placeholder="Create password" style="width: 100px; height:20px; padding:5px;margin:10px;border: none; border-radius: 5px; text-align: center;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; " class="makadi" id="password" value="">
+            <span onclick="myPassword()">
+                <i class="fa fa-eye icon" id="hide1"></i>
+                <i class="fa fa-eye-slash icon" id="hide2"></i>
+            </span>
+            <input type="submit" value="Continue" id="submit" style="background-color: rgb(101, 223, 71);margin:10px;border: none; border-radius: 5px; text-align: center; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;padding: 5px; border: none; cursor: pointer; color: white;width: 70px; height:30px;">
+             
+        </form>
+         <div id="geeta1">
+            <img src="https://d1z88p83zuviay.cloudfront.net/Images/login-popup-close.png" alt="close" style="cursor:pointer ; margin-left: 100px;">  
+          </div>
+
+    </div>
+</body>
+</html>
+<script>
+    function getotp(){
+        var num='1234567890';
+        let OTP="";
+        for(let i=0; i<4; i++){
+            OTP+=num[Math.floor(Math.random()*10)];
+
+        }
+        return OTP;
+    }
+
+    alert(getotp())
+</script>
+<script>
+   function myPassword(){
+    var a=document.getElementById("password");
+    var b=document.getElementById("hide1");
+    var c=document.getElementById("hide2");
+
+    if(a.type ==="password")
+    a.type  = "text";
+    b.style.display = block;
+    c.style.display = "none";
+   } 
+</script>
+<script src="register.js"></script>
