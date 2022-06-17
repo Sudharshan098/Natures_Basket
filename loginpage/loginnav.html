@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    #gitu{
+        height: 100px;
+        width: auto;
+        background-color: rgba(211, 206, 206, 0.568);
+        justify-content: space-between;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+       
+       
+        
+    }
+   
+   
+
+.button{
+    background-color: rgb(101, 223, 71);
+    padding:10px 15px;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+    cursor: pointer;
+}
+.gituu3{
+   
+        width: 10%;
+        height:100px;
+        margin-left: 400px;
+        padding-top: 10px;
+        cursor: pointer;
+        /* opacity: 0;
+        visibility: hidden; */
+        
+    
+}
+a{
+    margin-left: 300px;
+}
+
+</style>
+<body>
+    
+
+      
+    
+    <div id="gitu">
+        
+        <div class="gituu1"><a href="./login.html" class="button" id="close-button">login</a></div>
+
+        <div gituu2><a href="./sign.html" class="button" id="close-button">register</a></div>
+    
+          
+        <div class="gituu3">&times;
+
+        </div> 
+        
+
+        
+    </div>
+    
+</body>
+</html>
+<!-- <script>
+    
+    alert('"Hello User","First Fill the Registration Form,then,"Go To Login"');
+</script>
+     -->
+   
+<script> 
+document.querySelector(".gituu3").addEventListener("click",function(){
+    document.querySelector("#gitu").style.display="none";
+})
+</script>
