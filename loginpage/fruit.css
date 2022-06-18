@@ -1,0 +1,176 @@
+#beauty_category_container{
+    width: 50%;
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 20px;
+}
+#beauty_product_container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,auto);
+    gap: 20px;
+    width: auto;
+    margin:auto;
+        
+}
+#box_div{
+    display: flex;
+    margin-top: 15px;
+    
+
+}
+.beauty_category_name{
+    background-color: white
+}
+.beauty_category_name:hover{
+    background-color: rgb(101, 223, 71);
+}
+#avtar{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 380px;
+}
+/* #brand{
+    background-color: rgb(173, 243, 43);
+
+} */
+/* #rupya{
+    width:30px;
+    height: 15px;
+    border-radius: 4px;
+} */
+#detail{
+    width: 100%;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Mulish', sans-serif;
+    color: black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#sort_div{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: antiquewhite; */
+    
+}
+/* #sort_div:hover{
+    background-color: rgb(101, 223, 71);
+} */
+#sort{
+    padding: 0px ;
+    height: 15px;
+
+}
+#filter{
+    width: 80%;
+    border: 1px solid rgb(206, 206, 206);
+    height: 40px;
+    margin: 12px;
+    padding: 1px 20px 1px 20px;
+    background-color: white
+    
+}
+#filter:hover{
+    color: #167A92;
+    border: 1px solid rgb(206, 206, 206);
+    background-color: rgb(101, 223, 71);
+}
+
+#add_to_basket{
+    font-size: .8rem;
+    font-family: 'Mulish', sans-serif;
+    cursor: pointer;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(157, 157, 157);
+    background-color: rgb(101, 223, 71);
+    color: white;
+}
+/* #button{
+    border-radius: 1px solid gray;
+    border: 4px;
+} */
+/* button:hover{
+    background-color: white;
+    border: 1px solid rgb(157, 157, 157);
+    color: #167A92;
+    margin-top: 20px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+} */
+
+/* sidebar css started  */
+#main_container{
+    width: 92%;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto 0;
+    line-height: none;
+}
+#beauty_category_container{
+    width: 30%;
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 20px;
+}
+.beauty_category_heading{
+    font-size: .8rem;
+}
+#beauty_category{
+    margin: 20px 0 60px;
+}
+
+#beauty_category>div:nth-child(1)>a{
+    color: #167A92;
+    font-size: .8rem;
+}
+#beauty_category>div{
+    margin: -10px 10px 10px 10px;
+}
+.beauty_category_name>a{
+    font-size: .8rem;
+    font-family: 'Mulish', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+.beauty_category_name>a:hover{
+    text-decoration:underline;
+}
+.beauty_category_name{
+    margin: 20px 0;
+}
+#beauty_category>div:first-child{
+    margin-bottom: 40px;
+}
+
+
+.filter_type{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(222, 222, 222);
+}
+.filter_type>a{
+    color: black;
+    text-decoration: none;
+}
+.filter_type>a:hover, .add_btn:hover{
+    color: #167A92;
+    text-decoration: none;
+}
+#filter_container>p{
+    color: rgb(218, 218, 218);
+}
+#brand{
+    
+    width: 90%;
+    margin-bottom: 28px;
+    
+   
+}
+#brand>h2{
+    
+    margin: 1px 0px 20px 10px;    
+   
+}

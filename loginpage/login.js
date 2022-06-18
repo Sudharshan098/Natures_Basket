@@ -28,7 +28,7 @@ var form=document.querySelector("form");
         
                 localStorage.setItem("login",JSON.stringify(login));
                 alert("Login Successful")
-                window.location.href="navbar.html"
+                window.location.href="/Natures_Basket/index.html"
             }
             else{
                 alert("Invalid email-ID or Password")
@@ -39,3 +39,6 @@ var form=document.querySelector("form");
        
        
     });
+    // window.location.href="index.html"
+    // localStorage.setItem("userDatas",JSON.stringify(userArr));
+    //     window.location.href="register.html"
