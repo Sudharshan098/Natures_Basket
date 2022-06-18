@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+</body>
+</html>
+
+
+<script>
+    function details (p_img, p_name, p_price, p_des) {
+        this.productImg= p_img;
+        this.producttName= p_name;
+        this.price = p_price;
+        this.description= p_des;
+      
+    }
+
+    const product1 = new details('https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/70726a6d-f35e-480c-ba42-c95e808e3ec1_425x425.jpg',' Apple Red Delicious - Washington - 500 g',"MRP ₹199.5","ADD");
+    const product2 = new details('https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/f341c972-bc85-4b0d-8309-6bdaa4fd0cad_425x425.JPG',' Grapes Red Globe - Imported - 200 g',  "MRP ₹139.8","ADD");
+    const product3 = new details('https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/a473f647-d419-42d6-bceb-6859d017acbe_425x425.jpg',' Avocado - Imported - 250 g', "MRP ₹ 374.75","ADD");
+    const product4 = new details('https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/72c733c4-2a53-42b7-8e6a-de5fdc808b65_425x425.jpg',' Dev Alphonso Mango Regular - 1 Pc', "MRP ₹79","ADD");
+    const product5 = new details('https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/63b69966-4855-4b1f-80a2-74796c8a5e09_425x425.JPG','Custard Apple - 250 g',"MRP ₹87.2","ADD");
+
+
+    const product6 = new details('https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/2841946c-6155-402e-8e30-ffb53dc689b4_425x425.jpg','Baby Spinach/Palak - Exotic - 200 g',"MRP ₹179.8","ADD");
+    const product7 = new details('https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/3bc083e7-3eee-4d3d-a54b-8be0fb2e7a4c_425x425.JPG',' American Kale Curled - Exotic - 200 g',"MRP ₹159.8","ADD");
+    const product8 = new details('https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/c2f7af5c-db79-4f5f-990f-2935f88d9657_425x425.jpg','Parsley Flat - Exotic - 50 g',"MRP ₹42.45","ADD");
+    const product9 = new details('https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/e4ee6164-cf2d-4c3b-9baf-34801e64db0c_425x425.JPG','Lettuce Romaine Green - Exotic - 250 g',"MRP ₹149.75","ADD");
+    const product10 = new details('https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/cb4590ff-72ec-4343-8276-c27b02f94ba4_425x425.jpg','Baby Corn - Exotic - 100 g',"MRP ₹29.9","ADD");
+
+
+    const product11 = new details('https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/83e591f2-ace2-4b45-8916-9a532bfea930_425x425.jpg','Blueberry - Exotic - 125 g',"MRP ₹424.88","ADD");
+    const product12 = new details('https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/7478a1ca-08bf-42b3-88c4-6ee45a52d43a_425x425.jpg','Raspberry - Imported - 100 g ',"MRP ₹699.9","ADD");
+    const product13 = new details('https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/0aedbf6c-e335-4d8b-b742-982b61b18107_425x425.jpg','Blackberry - Imported - 125 g',"MRP ₹874.88","ADD");
+    const product14 = new details('https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/d37b5f28-11f9-481d-9df5-adec42b3c239_425x425.jpg','Red Currant - Exotic - 125 g',"MRP ₹874.88","ADD");
+    const product15 = new details('https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/d3375ac1-53d5-495c-9fd8-b5ae90203d6d_425x425.jpg','KIWI GOLDEN PACK - 1 Pc','KIWI GOLDEN PACK',"MRP ₹199","ADD");
+  
+
+
+
+
+    let arr=[product1,product2,product3,product4,product5,product6,product7,product8,product9,product10,product11,product12,product13,product14,product15];
+
+
+    function append(data) {
+        container.innerHTML=" ";
+        console.log(data)
+        data.forEach((elem)=> {
+            let button = document.createElement("div");
+            let box = document.createElement("div");
+            let image = document.createElement("img");
+            let h5 = document.createElement("h5");
+            let p1 = document.createElement("p");
+            let p2 = document.createElement("p");
+
+            image.setAttribute("src",elem.productImg);
+            h5.innerText=elem.producttName;
+            p1.innerText=elem.price;
+            p2.innerText=elem.description;
+            button.append(p1,p2);
+            box.append(image,h5,button);
+            
+           document.querySelector("#container").append(box);
+        });
+    }
+
+    append(arr)
+  
+// let products= [
+
+//     // {
+//     //     product_image: " https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/70726a6d-f35e-480c-ba42-c95e808e3ec1_425x425.jpg",
+//     //     productName: "DELIVERY IN 90 MINUTES Apple Red Delicious - Washington - 500 g ",
+//     //     productDecription: "Product of : USA. When it comes to apples, our mind remembers Washington automatically. Enjoy every bite of this All time favourite apples of the world.",
+//     //    price: 199.5,
+//     // },
+    
+
+//     // {
+//     //     product_image: `https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/f341c972-bc85-4b0d-8309-6bdaa4fd0cad_425x425.JPG`,
+//     //     productName: `DELIVERY IN 90 MINUTES Grapes Red Globe - Imported - 200 g `,
+//     //     productDecription: `Product of : USA.
+//     //                        Red Globe grapes are mildly sweet and flavourful. They are not as tangy as Flame seedless`,
+//     //    price: 139.8,
+//     // },
+
+
+// //     {
+// //         product_image: `https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/a473f647-d419-42d6-bceb-6859d017acbe_425x425.jpg`,
+// //         productName: `DELIVERY IN 90 MINUTES Avocado - Imported - 250 g `,
+// //         productDecription: `Product of : New Zealand/Peru.
+// // Add a unique taste and flavor to your soups and stews with creamy and delicious avocados`,
+// //        price: 374.75,
+// //     },
+
+//     // {
+//     //     product_image: `https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/72c733c4-2a53-42b7-8e6a-de5fdc808b65_425x425.jpg`,
+//     //     productName: `DELIVERY IN 90 MINUTES Dev Alphonso Mango Regular - 1 Pc `,
+//     //     productDecription: `Product of : INDIA. 100% Alphonsos from the farms of Devgad and Ratnagiri.`,
+//     //    price: 79,
+//     // },
+
+//     // {
+//     //     product_image: `https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/63b69966-4855-4b1f-80a2-74796c8a5e09_425x425.JPG`,
+//     //     productName: `Custard Apple - 250 g `,
+//     //     productDecription: `Product of : INDIA. A popular fruit, the custard apple is much loved globally for its unique shape and sweet taste.`,
+//     //    price: 87.2,
+//     // },
+
+
+// ]
+  
+
+
+
+</script>
