@@ -1,3 +1,13 @@
+
+
+
+ document.getElementById("tellme").addEventListener("click",myfunction)
+
+function myfunction(){
+
+  window.location.href="/Natures_Basket/navbarpage/organic.html"
+   }
+
 const slideShow=document.querySelectorAll(".slide_img")
 const imageDelay=3000;
 let counter=0;
