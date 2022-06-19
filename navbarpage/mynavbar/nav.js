@@ -29,13 +29,12 @@ function navbar(){
     </div>
     <div id="register">
        <div class="hh2"><a href="">Login</a></div>
-       <div class="hh2"><a href="">Register</a></div>
     </div>
     `
     }
 
  function changedsum(){
-return`  <div><select id="wow">
+return` <div><select id="wow">
 <option value=""><span id="opti">SHOP BY CATEGORY</span></option>
 <option value="a">Gift Hampers</option>
 <option value="b">Fruits & Vegetables</option>
@@ -45,13 +44,13 @@ return`  <div><select id="wow">
 <option value="f">Snack Bar</option>
 <option value="g">The Good Food Cafe</option>
 </select></div>
-<div>MY ORDERS</div>
-<div>GIFTING</div>
-<div>REWARDS</div>
-<div>BLOG</div>
-<div>OFFERS</div>
-<div>CONNOISSEUR'S SELECTION</div>
-<div>BOOK STORE VISIT</div>`
+<div><a href="">MY ORDERS</a></div>
+<div><a href="">GIFTING</a></div>
+<div><a href="">REWARDS</a></div>
+<div><a href="">BLOG</a></div>
+<div><a href="">OFFERS</a></div>
+<div><a href="">CONNOISSEUR'S SELECTION</a></div>
+<div><a href="">BOOK STORE VISIT</a></div>`
 
     }
     
