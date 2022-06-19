@@ -32,7 +32,27 @@ function navbar(){
        <div class="hh2"><a href="">Register</a></div>
     </div>
     `
-    
+    }
+
+ function changedsum(){
+return`  <div><select id="wow">
+<option value=""><span id="opti">SHOP BY CATEGORY</span></option>
+<option value="a">Gift Hampers</option>
+<option value="b">Fruits & Vegetables</option>
+<option value="c">Cheese,Meets & Fruit Platters</option>
+<option value="d">Health</option>
+<option value="e">Indian Grocery</option>
+<option value="f">Snack Bar</option>
+<option value="g">The Good Food Cafe</option>
+</select></div>
+<div>MY ORDERS</div>
+<div>GIFTING</div>
+<div>REWARDS</div>
+<div>BLOG</div>
+<div>OFFERS</div>
+<div>CONNOISSEUR'S SELECTION</div>
+<div>BOOK STORE VISIT</div>`
+
     }
     
-    export default navbar;
+    export {navbar,changedsum};

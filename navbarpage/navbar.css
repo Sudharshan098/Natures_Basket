@@ -50,3 +50,15 @@ font-size:13px;
 #gayab2>img{height:35px;width:93%;
 
 }
+#chance{height:30px;width:auto;
+  margin-left:70px;
+  display:flex;
+  border:1px solid #c2c0c0;;
+  justify-content:space-around;
+  margin-right:70px;
+  font-family: "CeraPRO-Regular";
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 34px;}
+  #wow{border:0px;}
+  #opti{font-size:18px;}
