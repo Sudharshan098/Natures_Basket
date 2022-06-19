@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <style>
+
+        #main{
+            display: flex;
+            justify-content: space-around;
+            width: 180%;
+            margin-left: -100px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            
+        }
+        #desc{
+            
+            margin-top: 80px;
+        }
+        #add_to_basket{
+                 background-color: rgb(10, 173, 10);
+                 margin: 40px;
+                 margin-left: 50px;
+                 display: block;
+                 padding: 15px 15px 15px 15px;
+                 border-radius: 12px;
+                 border: none;
+                 cursor: pointer;
+
+
+        }
+        button:hover{
+                 background-color: yellowgreen;
+                 margin: 40px;
+                 margin-left: 50px;
+                 display: block;
+                 padding: 15px 15px 15px 15px;
+                 border-radius: 12px;
+                 border: none;
+                 cursor: pointer; 
+                 color: white;         
+ }
+
+        img{
+            height: 400px;
+            width: 600%;
+
+        }
+        
+ h3{
+    font-size: 65px;
+}
+
+  #main_container{
+    width: 70%;
+    gap: 20px;
+    display: flex;
+    /* justify-content: space-between; */
+    margin: 30px auto 0;
+    line-height: none;
+}
+#beauty_category_container{
+    width: 30%;
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 20px;
+}
+.beauty_category_heading{
+    font-size: .8rem;
+}
+#beauty_category{
+    margin: 20px 0 60px;
+}
+
+#beauty_category>div:nth-child(1)>a{
+    color: #167A92;
+    font-size: .8rem;
+}
+#beauty_category>div{
+    margin: -10px 10px 10px 10px;
+}
+.beauty_category_name>a{
+    font-size: .8rem;
+    font-family: 'Mulish', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+.beauty_category_name>a:hover{
+    text-decoration:underline;
+}
+.beauty_category_name{
+    margin: 20px 0;
+}
+#beauty_category>div:first-child{
+    margin-bottom: 40px;
+}
+.beauty_category_name{
+    background-color: white
+}
+.beauty_category_name:hover{
+    background-color:rgb(173, 243, 43);
+}
+
+.filter_type{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(222, 222, 222);
+}
+.filter_type>a{
+    color: black;
+    text-decoration: none;
+}
+.filter_type>a:hover, .add_btn:hover{
+    color: #167A92;
+    text-decoration: none;
+}
+#filter_container>p{
+    color: rgb(218, 218, 218);
+}
+#brand{
+    
+    width: 100px;
+    margin-bottom: 28px;
+    
+   
+}
+#brand>h2{
+    
+    margin: 1px 0px 20px 10px;    
+   
+}
+
+#brand>div{
+    margin: -10px 10px 10px 10px;
+}
+#brand{
+    
+    width: 50%;
+    margin-bottom: 28px;
+    
+   
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="main_container">
+        <div id="beauty_category_container">
+            <h2 class="beauty_category_heading">Category</h2>
+                <div id="beauty_category">
+                    <div><a href="#">Breakfast, Dairy & Bakery</a></div>
+                    <div class="beauty_category_name"><a href="#">Breadsticks, Cro...</a></div>
+                    <div class="beauty_category_name"><a href="#">Buns, Croissants...</a></div>
+                    <div class="beauty_category_name"><a href="#">Hi-Fibre & Sourd...</a></div>
+                    <div class="beauty_category_name"><a href="#">Muffins, Cakes &...</a></div>
+                    <div class="beauty_category_name"><a href="#">Pita, Pizza Base...</a></div>
+                </div>
+                <div id="brand"><h2  class="beauty_category_heading">Brand</h2>
+                    <div class="beauty_category_name"><a href="#">L Exclusif</a></div>
+                    <div class="beauty_category_name"><a href="#"> The Bakers Dozen</a></div>
+                    <div class="beauty_category_name"><a href="#">Saucery </a></div>
+                    <div class="beauty_category_name"><a href="#">  Belgian Waffle</a></div>
+                    <div class="beauty_category_name"><a href="#"> Brownie Cottage</a></div>
+                    <div class="beauty_category_name"><a href="#"> Emporio Patisser...</a></div> 
+                    <div class="beauty_category_name"><a href="#">Wingreens</a></div>
+                    <div class="beauty_category_name"><a href="#">Sorrentina</a></div>
+                    <div class="beauty_category_name"><a href="#">Impossible Foods...</a></div>
+                    <div class="beauty_category_name"><a href="#"> Lotte</a></div>
+                </div>
+              
+           
+    
+        </div>
+          
+        <div>    
+    
+    <div id="main">
+        <div id="individual">
+
+        </div>
+        <div id="desc"></div>
+    </div>
+   
+          
+</body>
+</html>
+<script src="addpro.js"></script>
