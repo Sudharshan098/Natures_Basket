@@ -22,7 +22,7 @@
         </div>
       
         <div id="slideShow">
-            <div class="slides">
+            <!-- <div class="slides">
                 <img class="slide_img" src="https://d1z88p83zuviay.cloudfront.net/BannerImages/4c720a91-f8f7-437a-bbfd-71e63580e802_1320x376.jpg">
             </div>
             <div class="slides">
@@ -51,7 +51,7 @@
             </div>
             <div class="slides">
                 <img class="slide_img" src="https://d1z88p83zuviay.cloudfront.net/BannerImages/a1bb73ba-00a7-4473-ac0a-cafd9500e6eb_1320x376.jpg">
-            </div>
+            </div> -->
         </div>        
         <!-- /////////////////////////////////////////////// -->
         <div id="invites">
@@ -103,4 +103,33 @@
     <div id="footer"></div>
 </body>
 </html>
+<script>
+    let i = 0;
+var images=[]
+images[0]="https://d1z88p83zuviay.cloudfront.net/BannerImages/4c720a91-f8f7-437a-bbfd-71e63580e802_1320x376.jpg";
+images[1]="https://d1z88p83zuviay.cloudfront.net/BannerImages/172ece1d-70d5-44d5-a5f4-0d236c1d815a_1320x376.jpg"
+images[2]="https://d1z88p83zuviay.cloudfront.net/BannerImages/0f2301bb-4607-47f9-859c-1c2c21642159_1320x376.jpg"
+images[3]= "https://d1z88p83zuviay.cloudfront.net/BannerImages/28b8913f-ae0e-4afe-ac72-bae62be8ffb2_1320x376.png"
+images[4]="https://d1z88p83zuviay.cloudfront.net/BannerImages/a1bb73ba-00a7-4473-ac0a-cafd9500e6eb_1320x376.jpg"
+
+setInterval(function () { 
+    if (i === images.length) {
+i = 0;
+
+}
+
+let image= images[i]; //url
+
+slideShow.innerHTML = null;
+
+let img = document.createElement ("img");
+
+img.src = image;
+
+slideShow.append(img);
+
+i++;
+},
+ 2000);
+</script>
 <script src="/index.js"></script>

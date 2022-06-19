@@ -47,7 +47,7 @@ function Display(indi){
       // console.log(elm.image_url);
       basketLSData.push(addedProduct);
       localStorage.setItem("basket", JSON.stringify(basketLSData));
-      alert("Product added Successfully");
+      alert("Product added to Your Basket");
       window.location.href="gateway.html";
     }
     div.append(img);
